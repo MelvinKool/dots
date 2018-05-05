@@ -9,6 +9,7 @@ Plug 'kien/ctrlp.vim'
 Plug 'powerline/powerline'
 Plug 'altercation/vim-colors-solarized'
 Plug 'scrooloose/nerdcommenter'
+Plug '/tpope/vim-fugitive'
 call plug#end()
 " TODO autotags
 " TODO add vimtex
@@ -38,10 +39,10 @@ nnoremap <C-H> <C-W><C-H>
 autocmd BufWritePre *.py %s/\s\+$//e
 
 autocmd BufNewFile,BufRead *.py
-    \ set tabstop=4
-    \ set softtabstop=4
-    \ set shiftwidth=4
-    \ set textwidth=79
-    \ set expandtab
-    \ set autoindent
-    \ set fileformat=unix
+    \ set tabstop=4 |
+    \ set softtabstop=4 |
+    \ set shiftwidth=4 |
+    \ set textwidth=79 |
+    \ set expandtab |
+    \ set autoindent |
+    \ set fileformat=unix |
